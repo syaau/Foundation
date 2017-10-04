@@ -4,6 +4,8 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"link-local": "npm link ./app/actions && npm link ./app/assets && npm link ./app/components && npm link ./app/config && npm link ./app/screens && npm link ./app/services",
+		"prepare": "npm run link-local",
 		"test": "jest"
 	},
 	"dependencies": {
@@ -13,6 +15,14 @@
 		"react-redux": "^5.0.6",
 		"redux": "^3.7.2",
 		"redux-thunk": "^2.2.0"
+	},
+	"peerDependencies": {
+		"@app/actions": "^1.0.0",
+		"@app/assets": "^1.0.0",
+		"@app/components": "^1.0.0",
+		"@app/config": "^1.0.0",
+		"@app/screens": "^1.0.0",
+		"@app/services": "^1.0.0"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.0.1",

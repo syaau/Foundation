@@ -1,0 +1,12 @@
+{
+  "name": "@app/assets",
+  "private": true,
+  "version": "1.0.0",
+  "description": "App assets (images/fonts/videos/etc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}
